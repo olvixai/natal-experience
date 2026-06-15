@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NatalExperience Tours | Passeios e Experiências Exclusivas em Natal</title>
+  <meta name="description" content="Descubra o melhor de Natal e do Nordeste brasileiro com a NatalExperience Tours. Passeios clássicos, experiências exclusivas e roteiros sob medida. Mais de 30 anos de experiência.">
+  <meta name="keywords" content="passeios em Natal, experiências exclusivas Natal, turismo Natal RN, buggy Natal, helicóptero Natal, viagens nordeste">
+  <meta property="og:title" content="NatalExperience Tours | Experiências Inesquecíveis em Natal">
+  <meta property="og:description" content="Passeios clássicos, experiências exclusivas e roteiros sob medida no paraíso do Nordeste brasileiro.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" type="image/png" href="img/logo-minimal.png">
+
+  <link rel="canonical" href="https://www.natalexperience.com.br/">
+  <meta property="og:url" content="https://www.natalexperience.com.br/">
+  <meta property="og:image" content="https://www.natalexperience.com.br/img/hero-natal.png">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar--transparent" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="img/logo-minimal.png" alt="NatalExperience Tours">
+      </a>
+      <ul class="navbar__menu">
+        <li><a href="index.html" class="navbar__link navbar__link--active">Início</a></li>
+        <li><a href="experiencias.html" class="navbar__link">Experiências</a></li>
+        <li><a href="quem-somos.html" class="navbar__link">Quem Somos</a></li>
+        <li><a href="faq.html" class="navbar__link">FAQ</a></li>
+        <li><a href="blog.html" class="navbar__link">Blog</a></li>
+        <li><a href="contato.html" class="navbar__link">Contato</a></li>
+        <li>
+          <a href="#" class="navbar__cta" data-whatsapp data-whatsapp-message="Olá! Gostaria de reservar uma experiência incrível em Natal!">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Reservar
+          </a>
+        </li>
+      </ul>
+      <div class="navbar__hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Início</a>
+    <a href="experiencias.html">Experiências</a>
+    <a href="quem-somos.html">Quem Somos</a>
+    <a href="faq.html">FAQ</a>
+    <a href="blog.html">Blog</a>
+    <a href="contato.html">Contato</a>
+    <a href="#" class="btn btn--whatsapp btn--sm" data-whatsapp data-whatsapp-message="Olá! Gostaria de reservar uma experiência incrível em Natal!" style="margin-top: 20px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Reservar
+    </a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <video class="hero__video" autoplay loop muted playsinline poster="https://res.cloudinary.com/dsiyrx21y/video/upload/f_auto,q_auto:best,so_1.0/v1773945997/Hero.mp4_ivjrql.jpg">
+      <source src="https://res.cloudinary.com/dsiyrx21y/video/upload/f_auto,q_auto:best,so_1.0,vc_auto/v1773945997/Hero.mp4_ivjrql.mp4">
+    </video>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__tagline">NatalExperience Tours</p>
+      <h1 class="hero__title">Melhores Passeios e Experiências<br><span class="gold-text">Exclusivas em Natal</span></h1>
+      <p class="hero__subtitle">Passeios inesquecíveis, roteiros sob medida e aventuras VIP no paraíso do Rio Grande do Norte. Mais de 30 anos criando memórias extraordinárias.</p>
+      <a href="#" class="btn btn--whatsapp" data-whatsapp data-whatsapp-message="Olá! Vi o site da NatalExperience Tours e gostaria de reservar uma experiência incrível!">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Reserve sua experiência
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="section" id="categorias">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Nossas Experiências</span>
+        <h2>Escolha Sua <span class="gold-text">Aventura</span></h2>
+        <p>De passeios clássicos pelo litoral potiguar a experiências exclusivas de alto padrão — temos a aventura perfeita para cada viajante.</p>
+      </div>
+      <div class="grid grid--3">
+        <!-- Classic Tours -->
+        <a href="experiencias.html#classicos" class="category-card animate-on-scroll delay-1">
+          <img src="img/passeios_classicos_card.jpg" alt="Passeios Clássicos" class="category-card__image">
+          <div class="category-card__overlay">
+            <span class="category-card__label">Mais Populares</span>
+            <h3 class="category-card__title">Passeios Clássicos</h3>
+            <p class="category-card__desc">Buggy pelas dunas, praias paradisíacas, Pipa, Maracajaú e muito mais. As melhores experiências do litoral potiguar.</p>
+            <span class="btn btn--outline btn--sm">Explorar Passeios →</span>
+          </div>
+        </a>
+
+        <!-- Exclusive Experiences -->
+        <a href="experiencias.html#exclusivas" class="category-card animate-on-scroll delay-2">
+          <img src="img/experiencias_exclusivas_card.jpg" alt="Experiências Exclusivas" class="category-card__image">
+          <div class="category-card__overlay">
+            <span class="category-card__label">Premium</span>
+            <h3 class="category-card__title">Experiências Exclusivas</h3>
+            <p class="category-card__desc">Voos de helicóptero, charter de veleiro, mergulho privado e roteiros VIP. Para quem busca o extraordinário.</p>
+            <span class="btn btn--outline btn--sm">Ver Exclusivas →</span>
+          </div>
+        </a>
+        <!-- Custom Experiences -->
+        <a href="experiencias.html#medida" class="category-card animate-on-scroll delay-3">
+          <img src="img/experiencia_sob_medida_home.jpg" alt="Experiências sob Medida" class="category-card__image">
+          <div class="category-card__overlay">
+            <span class="category-card__label">Personalizado</span>
+            <h3 class="category-card__title">Experiências sob Medida</h3>
+            <p class="category-card__desc">Criamos o roteiro dos seus sonhos com cada detalhe personalizado para sua viagem.</p>
+            <span class="btn btn--outline btn--sm">Criar o Roteiro Sonhado →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POPULAR TOURS PREVIEW ===== -->
+  <section class="section section--pearl" id="populares">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Passeios Clássicos</span>
+        <h2>Os Mais <span class="gold-text">Procurados</span></h2>
+        <p>Experiências consagradas que encantam milhares de turistas todos os anos.</p>
+      </div>
+      <div class="grid grid--3">
+        <!-- OPCIÓN 3: COMPLETO (7H) -->
+        <div class="card animate-on-scroll delay-1">
+          <div class="card__image">
+            <img src="img/buggy-norte-5.jpg" alt="Buggy Litoral Norte Completo" class="card__img">
+            <span class="card__badge">Mais Completo</span>
+          </div>
+          <div class="card__body">
+            <span class="card__category">Passeio Clássico</span>
+            <h3 class="card__title">Litoral Norte Completo</h3>
+            <p class="card__text">O roteiro clássico total: Dunas, Lagoas e praias paradisíacas. A experiência definitiva.</p>
+            <div class="card__meta">
+              <span class="card__meta-item">⏱ ~7 horas</span>
+              <div class="card__pricing">
+                <div class="card__price"><span>A partir de</span> R$ 780 <span>/ Buggy</span></div>
+                <div class="price-installment"><!-- 3x sem juros no cartão --></div>
+              </div>
+            </div>
+          </div>
+          <a href="passeios/buggy-litoral-norte.html" style="position: absolute; inset: 0; z-index: 3;"></a>
+        </div>
+
+        <!-- OPCIÓN 1: ALTERNATIVO (2H) -->
+        <div class="card animate-on-scroll delay-2">
+          <div class="card__image">
+            <img src="img/buggy-litoral-norte-main.jpg" alt="Buggy Litoral Norte Alternativo" class="card__img" style="filter: brightness(0.9);">
+            <span class="card__badge">Versão Rápida</span>
+          </div>
+          <div class="card__body">
+            <span class="card__category">Passeio Clássico</span>
+            <h3 class="card__title">Litoral Norte Alternativo</h3>
+            <p class="card__text">Foco nas Dunas Fixas de Genipabú. Ideal para quem busca agilidade e beleza natural.</p>
+            <div class="card__meta">
+              <span class="card__meta-item">⏱ ~2 horas</span>
+              <div class="card__pricing">
+                <div class="card__price"><span>A partir de</span> R$ 400 <span>/ Buggy</span></div>
+                <div class="price-installment"><!-- 3x sem juros no cartão --></div>
+              </div>
+            </div>
+          </div>
+          <a href="passeios/buggy-litoral-alternativo.html" style="position: absolute; inset: 0; z-index: 3;"></a>
+        </div>
+
+        <!-- OPCIÓN 2: ESPECIAL (3H) -->
+        <div class="card animate-on-scroll delay-3">
+          <div class="card__image">
+            <img src="img/buggy-norte-1.jpg" alt="Buggy Litoral Norte Especial" class="card__img">
+            <span class="card__badge">Dunas Móveis</span>
+          </div>
+          <div class="card__body">
+            <span class="card__category">Passeio Clássico</span>
+            <h3 class="card__title">Litoral Norte Especial</h3>
+            <p class="card__text">Experiência focada nas Dunas Móveis e Fixas. Muita emoção em um roteiro eficiente.</p>
+            <div class="card__meta">
+              <span class="card__meta-item">⏱ ~3 horas</span>
+              <div class="card__pricing">
+                <div class="card__price"><span>A partir de</span> R$ 500 <span>/ Buggy</span></div>
+                <div class="price-installment"><!-- 3x sem juros no cartão --></div>
+              </div>
+            </div>
+          </div>
+          <a href="passeios/buggy-litoral-intermedio.html" style="position: absolute; inset: 0; z-index: 3;"></a>
+        </div>
+
+        <!-- Buggy Litoral Sul -->
+        <div class="card animate-on-scroll delay-3">
+          <div class="card__image">
+            <img src="img/buggy_pipa_1.jpg" alt="Buggy Litoral Sul em Pipa" class="card__img">
+            <span class="card__badge">Paraíso das Falésias</span>
+          </div>
+          <div class="card__body">
+            <span class="card__category">Aventura & Buggy</span>
+            <h3 class="card__title">Buggy Litoral Sul (Pipa)</h3>
+            <p class="card__text">O percurso à beira-mar até as falésias de Pipa. Praias desertas, balsa e muita aventura.</p>
+            <div class="card__meta">
+              <span class="card__meta-item">⏱ ~7 horas</span>
+              <div class="card__pricing">
+                <div class="card__price"><span>A partir de</span> R$ 800 <span>/ Buggy</span></div>
+                <div class="price-installment"><!-- 3x sem juros no cartão --></div>
+              </div>
+            </div>
+          </div>
+          <a href="passeios/buggy-litoral-sul-pipa.html" style="position: absolute; inset: 0; z-index: 3;"></a>
+        </div>
+
+        <!-- Pipa -->
+        <div class="card animate-on-scroll delay-1">
+          <div class="card__image">
+            <img src="img/pipa_2.jpg" alt="Passeio em Pipa" class="card__img">
+            <span class="card__badge">O Mais Famoso</span>
+          </div>
+          <div class="card__body">
+            <span class="card__category">Passeio Clássico</span>
+            <h3 class="card__title">Passeio em Pipa</h3>
+            <p class="card__text">Conheça a praia mais famosa do estado: Falésias, golfinhos e o charme da Vila de Pipa.</p>
+            <div class="card__meta">
+              <span class="card__meta-item">⏱ ~7 horas</span>
+              <div class="card__pricing">
+                <div class="card__price"><span>A partir de</span> R$ 75 <span>/ pessoa</span></div>
+                <div class="price-installment"><!-- 3x sem juros no cartão --></div>
+              </div>
+            </div>
+          </div>
+          <a href="passeios/pipa.html" style="position: absolute; inset: 0; z-index: 3;"></a>
+        </div>
+
+        <!-- Maracajaú Catamarã -->
+        <div class="card animate-on-scroll delay-2">
+          <div class="card__image">
+            <img src="img/maracajau_catamara_2.jpg" alt="Mergulho em Maracajaú Catamarã" class="card__img">
+            <span class="card__badge">Mais Procurado</span>
+          </div>
+          <div class="card__body">
+            <span class="card__category">Passeio Clássico</span>
+            <h3 class="card__title">Maracajaú (Catamarã)</h3>
+            <p class="card__text">O clássico mergulho nos parrachos com o conforto e estabilidade do catamarã a 7km da costa.</p>
+            <div class="card__meta">
+              <span class="card__meta-item">⏱ ~7 horas</span>
+              <div class="card__pricing">
+                <div class="card__price"><span>A partir de</span> R$ 170 <span>/ pessoa</span></div>
+                <div class="price-installment"><!-- 3x sem juros no cartão --></div>
+              </div>
+            </div>
+          </div>
+          <a href="passeios/maracajau-catamara.html" style="position: absolute; inset: 0; z-index: 3;"></a>
+        </div>
+
+        <!-- Maracajaú Lancha -->
+        <div class="card animate-on-scroll delay-3">
+          <div class="card__image">
+            <img src="img/maracajau_lancha_new_1.jpg" alt="Mergulho em Maracajaú Lancha Rápida" class="card__img">
+            <span class="card__badge">Opção VIP</span>
+          </div>
+          <div class="card__body">
+            <span class="card__category">Passeio Clássico</span>
+            <h3 class="card__title">Maracajaú (Lancha Rápida)</h3>
+            <p class="card__text">Chegue antes aos parrachos e aproveite mais tempo de mergulho nesta versão dinâmica e emocionante.</p>
+            <div class="card__meta">
+              <span class="card__meta-item">⏱ ~7 horas</span>
+              <div class="card__pricing">
+                <div class="card__price"><span>A partir de</span> R$ 280 <span>/ pessoa</span></div>
+                <div class="price-installment"><!-- 3x sem juros no cartão --></div>
+              </div>
+            </div>
+          </div>
+          <a href="passeios/maracajau.html" style="position: absolute; inset: 0; z-index: 3;"></a>
+        </div>
+
+        <!-- Maracajaú de Buggy -->
+        <div class="card animate-on-scroll delay-1">
+          <div class="card__image">
+            <img src="img/maracajau-buggy-mergulho-main.png" alt="Maracajaú de Buggy" class="card__img" style="object-fit: cover; object-position: center;">
+            <span class="card__badge">Aventura VIP</span>
+          </div>
+          <div class="card__body">
+            <span class="card__category">Buggy + Mergulho</span>
+            <h3 class="card__title">Maracajaú de Buggy (Mergulho)</h3>
+            <p class="card__text">O tour definitivo: dunas do litoral norte e mergulho nos parrachos de Maracajaú em buggy exclusivo.</p>
+            <div class="card__meta">
+              <span class="card__meta-item">⏱ ~8 horas</span>
+              <div class="card__pricing">
+                <div class="card__price"><span>A partir de</span> R$ 980 <span>/ Buggy</span></div>
+                <div class="price-installment"><!-- 3x sem juros no cartão --></div>
+              </div>
+            </div>
+          </div>
+          <a href="passeios/maracajau-buggy-mergulho.html" style="position: absolute; inset: 0; z-index: 3;"></a>
+        </div>
+
+        <!-- Passeio das Águas -->
+        <div class="card animate-on-scroll delay-2 is-hidden">
+          <div class="card__image">
+            <img src="img/litoral-sul-aguas-main.png" alt="Passeio das Águas" class="card__img">
+            <span class="card__badge">Lagoas do Sul</span>
+          </div>
+          <div class="card__body">
+            <span class="card__category">Passeio das Águas</span>
+            <h3 class="card__title">Litoral Sul: Passeio das Águas</h3>
+            <p class="card__text">Explore as lagoas cristalinas de Alcaçuz e Carcará em um roteiro focado em banho e relaxamento.</p>
+            <div class="card__meta">
+              <span class="card__meta-item">⏱ ~6 horas</span>
+              <div class="card__pricing">
+                <div class="card__price"><span>A partir de</span> R$ 760 <span>/ Buggy</span></div>
+                <div class="price-installment">Exclusivo Litoral Sul</div>
+              </div>
+            </div>
+          </div>
+          <a href="passeios/litoral-sul-aguas.html" style="position: absolute; inset: 0; z-index: 3;"></a>
+        </div>
+
+
+      </div>
+      <div style="text-align: center; margin-top: var(--space-xl);">
+        <a href="experiencias.html" class="btn btn--outline-dark">Ver Todos os Passeios →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXCLUSIVE HIGHLIGHTS ===== -->
+  <section class="section section--dark" id="exclusivas-preview">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Exclusividade</span>
+        <h2>Experiências que Vão <span class="gold-text">Além do Comum</span></h2>
+        <p>Serviços VIP e privativos para quem busca momentos verdadeiramente únicos no Nordeste brasileiro.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card card--overlay animate-on-scroll delay-1">
+          <div class="card__image">
+            <img src="img/transfer-vip-real.png" alt="Transfer VIP" class="card__img">
+          </div>
+          <div class="card__body">
+            <span class="card__category">Transporte VIP</span>
+            <h3 class="card__title">Transfer VIP (Aeroporto, Pipa, Gostoso, João Pessoa ...)</h3>
+            <p class="card__text">Deslocamentos com máximo conforto. Veículos premium de última geração e atendimento personalizado door-to-door.</p>
+          </div>
+          <a href="experiencias-exclusivas/transfer-vip.html" style="position: absolute; inset: 0; z-index: 3;"></a>
+        </div>
+
+        <div class="card card--overlay animate-on-scroll delay-1">
+          <div class="card__image">
+            <img src="img/helicoptero_card.png" alt="Voo de Helicóptero" class="card__img">
+          </div>
+          <div class="card__body">
+            <span class="card__category">Experiência VIP</span>
+            <h3 class="card__title">Voo de Helicóptero</h3>
+            <p class="card__text">Sobrevoar a costa, dunas, lagoas e praias do alto. Uma perspectiva única do paraíso. Até 6 passageiros.</p>
+          </div>
+          <a href="experiencias-exclusivas/voo-helicoptero.html" style="position: absolute; inset: 0; z-index: 3;"></a>
+        </div>
+
+        <div class="card card--overlay animate-on-scroll delay-2 is-hidden">
+          <div class="card__image">
+            <img src="img/veleiro_noronha_card.png" alt="Charter Veleiro Noronha" class="card__img">
+          </div>
+          <div class="card__body">
+            <span class="card__category">Experiência VIP</span>
+            <h3 class="card__title">Charter de Veleiro para Noronha</h3>
+            <p class="card__text">Navegue em um veleiro privado até Fernando de Noronha, partindo de Natal ou Recife. Pura exclusividade.</p>
+          </div>
+          <a href="experiencias-exclusivas/veleiro-noronha.html" style="position: absolute; inset: 0; z-index: 3;"></a>
+        </div>
+
+        <div class="card card--overlay animate-on-scroll delay-3 is-hidden">
+          <div class="card__image">
+            <img src="img/buggy_vip_card.png" alt="Passeio Diferenciado VIP" class="card__img">
+          </div>
+          <div class="card__body">
+            <span class="card__category">Experiência VIP</span>
+            <h3 class="card__title">Passeio Diferenciado VIP</h3>
+            <p class="card__text">Buggy + fotógrafo profissional + champagne + jantar exclusivo na praia. Uma experiência inesquecível.</p>
+          </div>
+          <a href="experiencias-exclusivas/buggy-vip.html" style="position: absolute; inset: 0; z-index: 3;"></a>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: var(--space-xl);">
+        <a href="experiencias.html#exclusivas" class="btn btn--outline">Explorar Experiências VIP →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US (Stats) ===== -->
+  <section class="section section--dark" style="padding-top: 0;">
+    <div class="container">
+      <div class="stats animate-on-scroll">
+        <div>
+          <div class="stat__number" data-counter="30" data-suffix="+">0</div>
+          <div class="stat__label">Anos de Experiência</div>
+        </div>
+        <div>
+          <div class="stat__number" data-counter="15000" data-suffix="+">0</div>
+          <div class="stat__label">Clientes Felizes</div>
+        </div>
+        <div>
+          <div class="stat__number" data-counter="50" data-suffix="+">0</div>
+          <div class="stat__label">Roteiros Disponíveis</div>
+        </div>
+        <div>
+          <div class="stat__number" data-counter="100" data-suffix="%">0</div>
+          <div class="stat__label">Satisfação</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section" id="depoimentos">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Depoimentos</span>
+        <h2>O Que Nossos Clientes <span class="gold-text">Dizem</span></h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="testimonial animate-on-scroll delay-1">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">"Uma experiência absolutamente incrível! O passeio de buggy foi emocionante e o Junior nos fez sentir em casa. Voltaremos com certeza!"</p>
+          <p class="testimonial__author">Carolina Martins</p>
+          <p class="testimonial__origin">São Paulo, SP</p>
+        </div>
+        <div class="testimonial animate-on-scroll delay-2">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">"O voo de helicóptero foi de tirar o fôlego! A equipe toda muito profissional e atenciosa. Superou todas as expectativas."</p>
+          <p class="testimonial__author">Ricardo & Ana Ferreira</p>
+          <p class="testimonial__origin">Lisboa, Portugal</p>
+        </div>
+        <div class="testimonial animate-on-scroll delay-3">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">"Contratamos o roteiro sob medida e foi perfeito. Cada detalhe pensado com carinho. Natal é mais lindo do que imaginávamos."</p>
+          <p class="testimonial__author">Família González</p>
+          <p class="testimonial__origin">Buenos Aires, Argentina</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="section section--dark" style="text-align: center;">
+    <div class="container animate-on-scroll">
+      <span class="section-label">Pronto para a Aventura?</span>
+      <h2 style="color: var(--color-white); margin-bottom: var(--space-md);">Transforme Suas Férias em <span class="gold-text">Memórias Eternas</span></h2>
+      <p style="color: var(--color-text-on-dark); max-width: 600px; margin: 0 auto var(--space-lg); font-size: 1.1rem; line-height: 1.7;">Fale diretamente com nossa equipe pelo WhatsApp e monte a experiência perfeita para você e sua família.</p>
+      <a href="#" class="btn btn--whatsapp" data-whatsapp data-whatsapp-message="Olá! Estou interessado em conhecer as experiências da NatalExperience Tours. Podem me ajudar a montar meu roteiro?">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Fale conosco
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="img/logo-minimal.png" alt="NatalExperience Tours" class="footer__logo">
+          <p>Há mais de 18 anos criando experiências inesquecíveis em Natal e no Nordeste brasileiro.</p>
+          <div class="footer__social" style="margin-top: 20px;">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__title">Experiências</h4>
+          <div class="footer__links">
+            <a href="experiencias.html#classicos">Passeios Clássicos</a>
+            <a href="experiencias.html#exclusivas">Experiências Exclusivas</a>
+            <a href="experiencias.html#medida">Sob Medida</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__title">Empresa</h4>
+          <div class="footer__links">
+            <a href="quem-somos.html">Quem Somos</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+            <a href="contato.html">Contato</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__title">Legislação</h4>
+          <div class="footer__links">
+            <a href="politica-privacidade.html">Privacidade</a>
+            <a href="politica-cookies.html">Cookies</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__title">Contato</h4>
+          <div class="footer__links">
+            <a href="#">📍 Rua Túlio Fernandes, 415 - Praia do Meio, Natal - RN, 59010-038, Brasil</a>
+            <a href="tel:+5584999868411">📞 +55 84 99986-8411</a>
+            <a href="mailto:natalexperiencetours@gmail.com">📧 natalexperiencetours@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>© 2025 NatalExperience Tours. Todos los derechos reservados.</p>
+        <p>Feito com ❤️ em Natal, RN</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+  <a href="#" class="whatsapp-float" data-whatsapp data-whatsapp-message="Olá! Gostaria de saber mais sobre os passeios da NatalExperience Tours." aria-label="Contato pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close">&times;</button>
+    <img src="" alt="Imagem ampliada">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
