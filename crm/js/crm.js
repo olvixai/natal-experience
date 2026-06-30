@@ -11,6 +11,10 @@ const State = {
   reservas: []
 };
 
+// Calendar state
+let calView = 'month';
+let calDate = new Date();
+
 /* ---------- Cliente API (POST text/plain → sin preflight CORS) ---------- */
 async function api(action, payload = {}) {
   if (!CRM_CONFIG.API_URL || CRM_CONFIG.API_URL.indexOf('PEGA_AQUI') === 0) {
@@ -216,28 +220,127 @@ function cardHTML(r) {
 }
 
 /* ============================================================
- *  AGENDA
+ *  AGENDA / CALENDARIO
  * ========================================================== */
+const MONTH_NAMES = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho',
+  'Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+const DAY_NAMES = ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+
 function renderAgenda() {
   const cont = $('#agenda');
-  const conFecha = State.reservas
-    .filter(r => r.fecha_excursion && r.estado !== 'Cancelado')
-    .sort((a, b) => a.fecha_excursion > b.fecha_excursion ? 1 : -1);
+  const monthLabel = MONTH_NAMES[calDate.getMonth()] + ' ' + calDate.getFullYear();
+  const weekStart = getWeekStart(calDate);
+  const weekLabel = fmtDate(weekStart.toISOString().slice(0,10)) + ' – ' +
+    fmtDate(new Date(weekStart.getTime() + 6*86400000).toISOString().slice(0,10));
 
-  if (!conFecha.length) { cont.innerHTML = '<div class="empty">No hay excursiones con fecha asignada</div>'; return; }
+  cont.innerHTML = `
+    <div class="cal-head">
+      <div class="cal-nav">
+        <button class="btn btn--ghost btn--sm" id="cal-prev">‹</button>
+        <span class="cal-title" id="cal-title">${calView === 'month' ? monthLabel : weekLabel}</span>
+        <button class="btn btn--ghost btn--sm" id="cal-next">›</button>
+      </div>
+      <div class="cal-views">
+        <button class="btn btn--sm ${calView==='month'?'btn--gold':'btn--ghost'}" id="cal-month-btn">Mês</button>
+        <button class="btn btn--sm ${calView==='week'?'btn--gold':'btn--ghost'}" id="cal-week-btn">Semana</button>
+      </div>
+    </div>
+    <div id="cal-grid"></div>`;
 
-  let html = '', lastDay = '';
-  conFecha.forEach(r => {
-    const day = String(r.fecha_excursion).slice(0, 10);
-    if (day !== lastDay) { html += `<div class="agenda__day">${esc(fmtDate(day))}</div>`; lastDay = day; }
-    html += `<div class="prox" data-id="${esc(r.id)}" style="cursor:pointer">
-      <span class="prox__exc">${esc(r.excursion || '—')}</span>
-      <span class="prox__cli">${esc(r.cliente_nombre)} ${r.num_personas ? '· ' + esc(r.num_personas) + ' pax' : ''}</span>
-      <span class="badge" style="background:${color(r.estado)}">${esc(r.estado)}</span></div>`;
-  });
-  cont.innerHTML = html;
-  $$('.prox[data-id]', cont).forEach(el =>
-    el.addEventListener('click', () => openModal(el.dataset.id)));
+  $('#cal-prev').addEventListener('click', () => { calNavigate(-1); renderAgenda(); });
+  $('#cal-next').addEventListener('click', () => { calNavigate(1); renderAgenda(); });
+  $('#cal-month-btn').addEventListener('click', () => { calView = 'month'; renderAgenda(); });
+  $('#cal-week-btn').addEventListener('click', () => { calView = 'week'; renderAgenda(); });
+
+  calView === 'month' ? renderMonth() : renderWeek();
+}
+
+function calNavigate(dir) {
+  if (calView === 'month') calDate = new Date(calDate.getFullYear(), calDate.getMonth() + dir, 1);
+  else calDate = new Date(calDate.getTime() + dir * 7 * 86400000);
+}
+
+function getWeekStart(d) {
+  const day = d.getDay();
+  const diff = day === 0 ? -6 : 1 - day;
+  return new Date(d.getFullYear(), d.getMonth(), d.getDate() + diff);
+}
+
+function getEventsForDate(dateStr) {
+  return State.reservas.filter(r =>
+    r.fecha_excursion && r.estado !== 'Cancelado' &&
+    String(r.fecha_excursion).slice(0,10) === dateStr);
+}
+
+function renderMonth() {
+  const grid = $('#cal-grid');
+  const year = calDate.getFullYear(), month = calDate.getMonth();
+  const firstDay = new Date(year, month, 1);
+  const lastDay  = new Date(year, month + 1, 0);
+  const today    = new Date();
+
+  let startOffset = firstDay.getDay();
+  startOffset = startOffset === 0 ? 6 : startOffset - 1;
+
+  let html = '<div class="cal-month"><div class="cal-week-row cal-week-header">';
+  DAY_NAMES.forEach(d => html += `<div class="cal-day-head">${d}</div>`);
+  html += '</div>';
+
+  let cur = new Date(year, month, 1 - startOffset);
+  for (let w = 0; w < 6; w++) {
+    html += '<div class="cal-week-row">';
+    for (let d = 0; d < 7; d++) {
+      const inMonth = cur.getMonth() === month;
+      const isToday = cur.toDateString() === today.toDateString();
+      const dateStr = cur.toISOString().slice(0,10);
+      const events  = getEventsForDate(dateStr);
+      html += `<div class="cal-day${!inMonth?' cal-day--other':''}${isToday?' cal-day--today':''}">
+        <span class="cal-day-num">${cur.getDate()}</span>
+        <div class="cal-events">${events.map(r =>
+          `<div class="cal-event" data-id="${esc(r.id)}" style="background:${color(r.estado)}" title="${esc(r.cliente_nombre||'')} · ${esc(r.excursion||'')}">
+            ${esc(r.cliente_nombre || r.excursion || '—')}
+          </div>`).join('')}</div></div>`;
+      cur = new Date(cur.getTime() + 86400000);
+    }
+    html += '</div>';
+    if (cur > lastDay && w >= 4) break;
+  }
+  html += '</div>';
+  grid.innerHTML = html;
+  $$('.cal-event', grid).forEach(el =>
+    el.addEventListener('click', e => { e.stopPropagation(); openModal(el.dataset.id); }));
+}
+
+function renderWeek() {
+  const grid = $('#cal-grid');
+  const weekStart = getWeekStart(calDate);
+  const today = new Date();
+
+  let html = '<div class="cal-week-view"><div class="cal-week-row cal-week-header">';
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(weekStart.getTime() + i*86400000);
+    const isToday = d.toDateString() === today.toDateString();
+    html += `<div class="cal-day-head${isToday?' cal-day-head--today':''}">${DAY_NAMES[i]}<br><span>${d.getDate()}/${d.getMonth()+1}</span></div>`;
+  }
+  html += '</div><div class="cal-week-row cal-week-body">';
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(weekStart.getTime() + i*86400000);
+    const isToday = d.toDateString() === today.toDateString();
+    const events = getEventsForDate(d.toISOString().slice(0,10));
+    html += `<div class="cal-day cal-day--week${isToday?' cal-day--today':''}">
+      ${events.length ? events.map(r =>
+        `<div class="cal-event cal-event--week" data-id="${esc(r.id)}" style="background:${color(r.estado)}">
+          <strong>${esc(r.cliente_nombre||'—')}</strong>
+          <span>${esc(r.excursion||'')}</span>
+          ${r.num_personas?`<span>${esc(r.num_personas)} pax</span>`:''}
+          ${r.precio?`<span>R$ ${esc(fmtMoney(r.precio))}</span>`:''}
+        </div>`).join('') : '<div class="cal-no-event"></div>'}
+    </div>`;
+  }
+  html += '</div></div>';
+  grid.innerHTML = html;
+  $$('.cal-event', grid).forEach(el =>
+    el.addEventListener('click', e => { e.stopPropagation(); openModal(el.dataset.id); }));
 }
 
 /* ============================================================
