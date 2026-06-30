@@ -17,12 +17,12 @@ classicos = [
     },
     {
         "filename": "passeios/pipa.html",
-        "title": "Passeio em Pipa",
+        "title": "Passeio para Pipa",
         "price_string": '<p class="detail-sidebar__price">A partir de R$ 75 <span>/ pessoa</span></p>',
         "sticky_price": "A partir de R$ 75",
         "duration": "Dia inteiro",
         "description": "Pipa é um dos destinos mais cobiçados do Brasil, famosa por suas imensas falésias coloridas, mar de águas mornas e a charmosa vila repleta de lojas e gastronomia internacional.",
-        "whatsapp_name": "Passeio em Pipa",
+        "whatsapp_name": "Passeio para Pipa",
         "inclusions": ["Transporte rodoviário de ida e volta", "Guia de turismo credenciado", "Seguro passageiro", "Visita à Praia do Madeiro, Baía dos Golfinhos e Centro de Pipa"],
         "exclusions": ["Alimentação e bebidas", "Passeios de barco ou buggy locais (opcionais)", "Gastos pessoais na vila"],
         "what_to_bring": ["Roupas leves e de banho", "Protetor solar e óculos de sol", "Câmera fotográfica ou celular"]

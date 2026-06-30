@@ -1,0 +1,10 @@
+*.py
+apps-script/
+__pycache__/
+.git
+.gitignore
+*.md
+seo-audit/
+.claude/
+img/_originals_backup/
+image_mapping.json

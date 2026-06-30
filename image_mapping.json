@@ -1,0 +1,807 @@
+{
+  "4x4_sul_gallery_1.jpg": {
+    "new_file": "4x4_sul_gallery_1.webp",
+    "width": 600,
+    "height": 331,
+    "old_size": 32760,
+    "new_size": 20866
+  },
+  "4x4_sul_gallery_2.jpg": {
+    "new_file": "4x4_sul_gallery_2.webp",
+    "width": 600,
+    "height": 335,
+    "old_size": 45991,
+    "new_size": 34072
+  },
+  "4x4_sul_gallery_3.jpg": {
+    "new_file": "4x4_sul_gallery_3.webp",
+    "width": 600,
+    "height": 338,
+    "old_size": 80640,
+    "new_size": 72436
+  },
+  "aviao_card.png": {
+    "new_file": "aviao_card.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 873753,
+    "new_size": 120360
+  },
+  "blog-buggy-vale-a-pena.jpg": {
+    "new_file": "blog-buggy-vale-a-pena.webp",
+    "width": 600,
+    "height": 327,
+    "old_size": 41171,
+    "new_size": 25734
+  },
+  "blog-guia-natal.jpg": {
+    "new_file": "blog-guia-natal.webp",
+    "width": 600,
+    "height": 327,
+    "old_size": 46361,
+    "new_size": 31202
+  },
+  "blog-guia-natal.png": {
+    "new_file": "blog-guia-natal.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 962718,
+    "new_size": 148556
+  },
+  "blog-lagoas-natal.png": {
+    "new_file": "blog-lagoas-natal.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 992069,
+    "new_size": 160898
+  },
+  "blog-melhores-passeios.jpg": {
+    "new_file": "blog-melhores-passeios.webp",
+    "width": 600,
+    "height": 327,
+    "old_size": 66922,
+    "new_size": 48882
+  },
+  "blog-melhores-passeios.png": {
+    "new_file": "blog-melhores-passeios.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 1037667,
+    "new_size": 171448
+  },
+  "blog-mergulho-natal.jpg": {
+    "new_file": "blog-mergulho-natal.webp",
+    "width": 600,
+    "height": 398,
+    "old_size": 63778,
+    "new_size": 43814
+  },
+  "blog-norte-ou-sul.jpg": {
+    "new_file": "blog-norte-ou-sul.webp",
+    "width": 600,
+    "height": 327,
+    "old_size": 53465,
+    "new_size": 36600
+  },
+  "blog-pipa-bate-e-volta.jpg": {
+    "new_file": "blog-pipa-bate-e-volta.webp",
+    "width": 600,
+    "height": 327,
+    "old_size": 55544,
+    "new_size": 39832
+  },
+  "blog-roteiro-natal.png": {
+    "new_file": "blog-roteiro-natal.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 858264,
+    "new_size": 112650
+  },
+  "buggy-fortaleza-1.jpg": {
+    "new_file": "buggy-fortaleza-1.webp",
+    "width": 500,
+    "height": 452,
+    "old_size": 69498,
+    "new_size": 45138
+  },
+  "buggy-fortaleza-2.jpg": {
+    "new_file": "buggy-fortaleza-2.webp",
+    "width": 600,
+    "height": 383,
+    "old_size": 35485,
+    "new_size": 16854
+  },
+  "buggy-fortaleza-3.jpg": {
+    "new_file": "buggy-fortaleza-3.webp",
+    "width": 600,
+    "height": 283,
+    "old_size": 45806,
+    "new_size": 28578
+  },
+  "buggy-fortaleza-4.jpg": {
+    "new_file": "buggy-fortaleza-4.webp",
+    "width": 600,
+    "height": 373,
+    "old_size": 69792,
+    "new_size": 45928
+  },
+  "buggy-fortaleza-5.jpg": {
+    "new_file": "buggy-fortaleza-5.webp",
+    "width": 600,
+    "height": 396,
+    "old_size": 82061,
+    "new_size": 46848
+  },
+  "buggy-litoral-norte-main.jpg": {
+    "new_file": "buggy-litoral-norte-main.webp",
+    "width": 640,
+    "height": 640,
+    "old_size": 51410,
+    "new_size": 35494
+  },
+  "buggy-norte-1.jpg": {
+    "new_file": "buggy-norte-1.webp",
+    "width": 640,
+    "height": 480,
+    "old_size": 57516,
+    "new_size": 39702
+  },
+  "buggy-norte-2.jpg": {
+    "new_file": "buggy-norte-2.webp",
+    "width": 500,
+    "height": 692,
+    "old_size": 68779,
+    "new_size": 43840
+  },
+  "buggy-norte-3.jpg": {
+    "new_file": "buggy-norte-3.webp",
+    "width": 600,
+    "height": 362,
+    "old_size": 44751,
+    "new_size": 27582
+  },
+  "buggy-norte-4.jpg": {
+    "new_file": "buggy-norte-4.webp",
+    "width": 640,
+    "height": 480,
+    "old_size": 49959,
+    "new_size": 28780
+  },
+  "buggy-norte-5.jpg": {
+    "new_file": "buggy-norte-5.webp",
+    "width": 640,
+    "height": 640,
+    "old_size": 62023,
+    "new_size": 44654
+  },
+  "buggy-norte-alt-balsa.jpg": {
+    "new_file": "buggy-norte-alt-balsa.webp",
+    "width": 900,
+    "height": 1200,
+    "old_size": 184368,
+    "new_size": 135894
+  },
+  "buggy-norte-alt-frota-dunas.jpg": {
+    "new_file": "buggy-norte-alt-frota-dunas.webp",
+    "width": 1600,
+    "height": 893,
+    "old_size": 207953,
+    "new_size": 137278
+  },
+  "buggy-norte-alt-frota-sunset.jpg": {
+    "new_file": "buggy-norte-alt-frota-sunset.webp",
+    "width": 1600,
+    "height": 893,
+    "old_size": 189023,
+    "new_size": 120112
+  },
+  "buggy-norte-alt-praia-guia.jpg": {
+    "new_file": "buggy-norte-alt-praia-guia.webp",
+    "width": 1200,
+    "height": 850,
+    "old_size": 145831,
+    "new_size": 86382
+  },
+  "buggy-norte-grupo-t1.jpg": {
+    "new_file": "buggy-norte-grupo-t1.webp",
+    "width": 1600,
+    "height": 893,
+    "old_size": 198607,
+    "new_size": 143080
+  },
+  "buggy-norte-nuevo-88.jpg": {
+    "new_file": "buggy-norte-nuevo-88.webp",
+    "width": 1200,
+    "height": 540,
+    "old_size": 188149,
+    "new_size": 147932
+  },
+  "buggy-norte-nuevo-99.jpg": {
+    "new_file": "buggy-norte-nuevo-99.webp",
+    "width": 675,
+    "height": 1200,
+    "old_size": 142283,
+    "new_size": 90530
+  },
+  "buggy-norte-nuevo-mejora_la_calidad_2K_202606261109.jpg": {
+    "new_file": "buggy-norte-nuevo-mejora_la_calidad_2K_202606261109.webp",
+    "width": 1200,
+    "height": 669,
+    "old_size": 97467,
+    "new_size": 47576
+  },
+  "buggy-norte-ponte-newcomer.jpg": {
+    "new_file": "buggy-norte-ponte-newcomer.webp",
+    "width": 1200,
+    "height": 587,
+    "old_size": 104065,
+    "new_size": 63722
+  },
+  "buggy_pipa_1.jpg": {
+    "new_file": "buggy_pipa_1.webp",
+    "width": 600,
+    "height": 297,
+    "old_size": 37257,
+    "new_size": 26976
+  },
+  "buggy_pipa_2.jpg": {
+    "new_file": "buggy_pipa_2.webp",
+    "width": 600,
+    "height": 397,
+    "old_size": 45876,
+    "new_size": 30914
+  },
+  "buggy_pipa_3.jpg": {
+    "new_file": "buggy_pipa_3.webp",
+    "width": 600,
+    "height": 400,
+    "old_size": 77038,
+    "new_size": 62192
+  },
+  "buggy_pipa_4.jpg": {
+    "new_file": "buggy_pipa_4.webp",
+    "width": 600,
+    "height": 450,
+    "old_size": 60787,
+    "new_size": 43488
+  },
+  "buggy_pipa_5.jpg": {
+    "new_file": "buggy_pipa_5.webp",
+    "width": 600,
+    "height": 356,
+    "old_size": 44573,
+    "new_size": 28798
+  },
+  "buggy_vip_card.png": {
+    "new_file": "buggy_vip_card.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 767780,
+    "new_size": 81736
+  },
+  "city-tour-buggy-main.png": {
+    "new_file": "city-tour-buggy-main.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 913684,
+    "new_size": 139452
+  },
+  "equipe_atendimento.png": {
+    "new_file": "equipe_atendimento.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 674150,
+    "new_size": 71798
+  },
+  "equipe_guia.png": {
+    "new_file": "equipe_guia.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 677171,
+    "new_size": 62206
+  },
+  "equipe_motorista.png": {
+    "new_file": "equipe_motorista.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 769073,
+    "new_size": 87168
+  },
+  "expedicao_buggy_card.png": {
+    "new_file": "expedicao_buggy_card.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 950000,
+    "new_size": 150852
+  },
+  "experiencia_sob_medida_home.jpg": {
+    "new_file": "experiencia_sob_medida_home.webp",
+    "width": 616,
+    "height": 1024,
+    "old_size": 352356,
+    "new_size": 99388
+  },
+  "experiencias_exclusivas_card.jpg": {
+    "new_file": "experiencias_exclusivas_card.webp",
+    "width": 686,
+    "height": 1024,
+    "old_size": 291984,
+    "new_size": 64804
+  },
+  "f0.jpg": {
+    "new_file": "f0.webp",
+    "width": 1920,
+    "height": 1080,
+    "old_size": 1128923,
+    "new_size": 298694
+  },
+  "f1.jpg": {
+    "new_file": "f1.webp",
+    "width": 1277,
+    "height": 1920,
+    "old_size": 5774410,
+    "new_size": 263326
+  },
+  "f2.jpg": {
+    "new_file": "f2.webp",
+    "width": 1920,
+    "height": 1277,
+    "old_size": 4205328,
+    "new_size": 419122
+  },
+  "f3.jpg": {
+    "new_file": "f3.webp",
+    "width": 1920,
+    "height": 1080,
+    "old_size": 724374,
+    "new_size": 294038
+  },
+  "f4.jpg": {
+    "new_file": "f4.webp",
+    "width": 1277,
+    "height": 1920,
+    "old_size": 3159237,
+    "new_size": 163088
+  },
+  "galinhos.png": {
+    "new_file": "galinhos.webp",
+    "width": 600,
+    "height": 299,
+    "old_size": 305013,
+    "new_size": 35796
+  },
+  "galinhos_main.png": {
+    "new_file": "galinhos_main.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 873546,
+    "new_size": 114472
+  },
+  "gostoso_main.png": {
+    "new_file": "gostoso_main.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 998612,
+    "new_size": 155908
+  },
+  "helicoptero_card.png": {
+    "new_file": "helicoptero_card.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 1468473,
+    "new_size": 95874
+  },
+  "helicoptero_gallery_1.jpg": {
+    "new_file": "helicoptero_gallery_1.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 214120,
+    "new_size": 108448
+  },
+  "helicoptero_gallery_2.jpg": {
+    "new_file": "helicoptero_gallery_2.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 256692,
+    "new_size": 146914
+  },
+  "helicoptero_gallery_3.jpg": {
+    "new_file": "helicoptero_gallery_3.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 285717,
+    "new_size": 170198
+  },
+  "helicoptero_gallery_4.jpg": {
+    "new_file": "helicoptero_gallery_4.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 287251,
+    "new_size": 171994
+  },
+  "junior.jpg": {
+    "new_file": "junior.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 378562,
+    "new_size": 61944
+  },
+  "litoral-sul-aguas-main.png": {
+    "new_file": "litoral-sul-aguas-main.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 1034263,
+    "new_size": 182094
+  },
+  "litoral_sul_4x4_main.png": {
+    "new_file": "litoral_sul_4x4_main.webp",
+    "width": 640,
+    "height": 640,
+    "old_size": 47397,
+    "new_size": 31186
+  },
+  "litoral_sul_carcara.png": {
+    "new_file": "litoral_sul_carcara.webp",
+    "width": 640,
+    "height": 640,
+    "old_size": 88306,
+    "new_size": 75866
+  },
+  "litoral_sul_sunset.png": {
+    "new_file": "litoral_sul_sunset.webp",
+    "width": 640,
+    "height": 640,
+    "old_size": 54505,
+    "new_size": 35564
+  },
+  "logo-minimal.png": {
+    "new_file": "logo-minimal.webp",
+    "width": 517,
+    "height": 483,
+    "old_size": 105629,
+    "new_size": 31000
+  },
+  "logo.png": {
+    "new_file": "logo.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 276011,
+    "new_size": 69004
+  },
+  "logo_high_res.png": {
+    "new_file": "logo_high_res.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 229724,
+    "new_size": 22272
+  },
+  "maracajau-buggy-mergulho-main.png": {
+    "new_file": "maracajau-buggy-mergulho-main.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 917472,
+    "new_size": 135376
+  },
+  "maracajau-snorkeling.png": {
+    "new_file": "maracajau-snorkeling.webp",
+    "width": 1281,
+    "height": 622,
+    "old_size": 2111354,
+    "new_size": 117012
+  },
+  "maracajau_catamara_2.jpg": {
+    "new_file": "maracajau_catamara_2.webp",
+    "width": 600,
+    "height": 337,
+    "old_size": 55416,
+    "new_size": 43316
+  },
+  "maracajau_catamara_3.jpg": {
+    "new_file": "maracajau_catamara_3.webp",
+    "width": 600,
+    "height": 338,
+    "old_size": 46269,
+    "new_size": 33774
+  },
+  "maracajau_catamara_4.jpg": {
+    "new_file": "maracajau_catamara_4.webp",
+    "width": 600,
+    "height": 338,
+    "old_size": 65973,
+    "new_size": 52448
+  },
+  "maracajau_catamara_5.jpg": {
+    "new_file": "maracajau_catamara_5.webp",
+    "width": 1024,
+    "height": 896,
+    "old_size": 256764,
+    "new_size": 117450
+  },
+  "maracajau_catamara_b1.jpg": {
+    "new_file": "maracajau_catamara_b1.webp",
+    "width": 600,
+    "height": 338,
+    "old_size": 39897,
+    "new_size": 28234
+  },
+  "maracajau_lancha_1.png": {
+    "new_file": "maracajau_lancha_1.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 963837,
+    "new_size": 147750
+  },
+  "maracajau_lancha_2.png": {
+    "new_file": "maracajau_lancha_2.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 976368,
+    "new_size": 154846
+  },
+  "maracajau_lancha_3.png": {
+    "new_file": "maracajau_lancha_3.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 1259806,
+    "new_size": 258948
+  },
+  "maracajau_lancha_4.png": {
+    "new_file": "maracajau_lancha_4.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 1009005,
+    "new_size": 169118
+  },
+  "maracajau_lancha_5.png": {
+    "new_file": "maracajau_lancha_5.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 853340,
+    "new_size": 117018
+  },
+  "maracajau_lancha_l3_centered.jpg": {
+    "new_file": "maracajau_lancha_l3_centered.webp",
+    "width": 1024,
+    "height": 484,
+    "old_size": 179369,
+    "new_size": 95030
+  },
+  "maracajau_lancha_new_1.jpg": {
+    "new_file": "maracajau_lancha_new_1.webp",
+    "width": 600,
+    "height": 335,
+    "old_size": 46272,
+    "new_size": 33134
+  },
+  "maracajau_lancha_new_2.jpg": {
+    "new_file": "maracajau_lancha_new_2.webp",
+    "width": 600,
+    "height": 383,
+    "old_size": 59420,
+    "new_size": 43340
+  },
+  "maracajau_lancha_new_3.jpg": {
+    "new_file": "maracajau_lancha_new_3.webp",
+    "width": 600,
+    "height": 450,
+    "old_size": 44003,
+    "new_size": 27218
+  },
+  "maracajau_lancha_new_4.jpg": {
+    "new_file": "maracajau_lancha_new_4.webp",
+    "width": 1024,
+    "height": 560,
+    "old_size": 237578,
+    "new_size": 137474
+  },
+  "mergulho_privado_card.png": {
+    "new_file": "mergulho_privado_card.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 942719,
+    "new_size": 143504
+  },
+  "natal_centro_historico_1775225244802.png": {
+    "new_file": "natal_centro_historico_1775225244802.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 957410,
+    "new_size": 141110
+  },
+  "natal_igreja_matriz_1775225262023.png": {
+    "new_file": "natal_igreja_matriz_1775225262023.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 964552,
+    "new_size": 156038
+  },
+  "natal_teatro_alberto_maranhao_1775225281178.png": {
+    "new_file": "natal_teatro_alberto_maranhao_1775225281178.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 952878,
+    "new_size": 144212
+  },
+  "parachos.png": {
+    "new_file": "parachos.webp",
+    "width": 1920,
+    "height": 911,
+    "old_size": 7053658,
+    "new_size": 165866
+  },
+  "passeios_classicos_card.jpg": {
+    "new_file": "passeios_classicos_card.webp",
+    "width": 500,
+    "height": 692,
+    "old_size": 68779,
+    "new_size": 43840
+  },
+  "perobas_1.png": {
+    "new_file": "perobas_1.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 988931,
+    "new_size": 161972
+  },
+  "perobas_2.png": {
+    "new_file": "perobas_2.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 1117474,
+    "new_size": 209822
+  },
+  "perobas_3.png": {
+    "new_file": "perobas_3.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 1154162,
+    "new_size": 225562
+  },
+  "perobas_4.png": {
+    "new_file": "perobas_4.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 810525,
+    "new_size": 96610
+  },
+  "perobas_5.png": {
+    "new_file": "perobas_5.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 812380,
+    "new_size": 83626
+  },
+  "pipa_1.jpg": {
+    "new_file": "pipa_1.webp",
+    "width": 700,
+    "height": 422,
+    "old_size": 69579,
+    "new_size": 51450
+  },
+  "pipa_2.jpg": {
+    "new_file": "pipa_2.webp",
+    "width": 600,
+    "height": 403,
+    "old_size": 74672,
+    "new_size": 57514
+  },
+  "pipa_3.jpg": {
+    "new_file": "pipa_3.webp",
+    "width": 600,
+    "height": 450,
+    "old_size": 59350,
+    "new_size": 43176
+  },
+  "pipa_4.jpg": {
+    "new_file": "pipa_4.webp",
+    "width": 600,
+    "height": 395,
+    "old_size": 73315,
+    "new_size": 57206
+  },
+  "pipa_5.jpg": {
+    "new_file": "pipa_5.webp",
+    "width": 700,
+    "height": 464,
+    "old_size": 49427,
+    "new_size": 32142
+  },
+  "pipa_card.png": {
+    "new_file": "pipa_card.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 1032276,
+    "new_size": 179774
+  },
+  "potengi_main.png": {
+    "new_file": "potengi_main.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 881410,
+    "new_size": 118708
+  },
+  "rota_norte_helicoptero_card.png": {
+    "new_file": "rota_norte_helicoptero_card.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 1385215,
+    "new_size": 83416
+  },
+  "rota_secreta_card.png": {
+    "new_file": "rota_secreta_card.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 1059158,
+    "new_size": 190892
+  },
+  "sob_medida_banner.png": {
+    "new_file": "sob_medida_banner.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 756642,
+    "new_size": 81304
+  },
+  "transfer-vip-main.png": {
+    "new_file": "transfer-vip-main.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 781624,
+    "new_size": 94250
+  },
+  "transfer-vip-real.png": {
+    "new_file": "transfer-vip-real.webp",
+    "width": 600,
+    "height": 361,
+    "old_size": 552892,
+    "new_size": 48090
+  },
+  "transfer_vip_card.png": {
+    "new_file": "transfer_vip_card.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 960870,
+    "new_size": 152350
+  },
+  "transfer_vip_gallery_1.png": {
+    "new_file": "transfer_vip_gallery_1.webp",
+    "width": 600,
+    "height": 361,
+    "old_size": 528156,
+    "new_size": 42526
+  },
+  "transfer_vip_gallery_2.png": {
+    "new_file": "transfer_vip_gallery_2.webp",
+    "width": 600,
+    "height": 361,
+    "old_size": 571195,
+    "new_size": 50324
+  },
+  "transfer_vip_gallery_4.jpg": {
+    "new_file": "transfer_vip_gallery_4.webp",
+    "width": 600,
+    "height": 391,
+    "old_size": 85968,
+    "new_size": 59346
+  },
+  "transfer_vip_gallery_main.png": {
+    "new_file": "transfer_vip_gallery_main.webp",
+    "width": 600,
+    "height": 450,
+    "old_size": 592517,
+    "new_size": 38282
+  },
+  "veleiro_noronha_card.png": {
+    "new_file": "veleiro_noronha_card.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 996863,
+    "new_size": 170148
+  },
+  "vip_gostoso_card.png": {
+    "new_file": "vip_gostoso_card.webp",
+    "width": 900,
+    "height": 900,
+    "old_size": 1008906,
+    "new_size": 171496
+  }
+}
