@@ -3,7 +3,7 @@
 **Sitio:** Agencia de tours/passeios en Natal, RN, Brasil — 42 páginas HTML estáticas
 **Código fuente:** `E:\ANTIGRAVITY\NATALEXPERIENCE`
 **Deploy accesible verificado:** https://natal-experience.vercel.app/
-**Dominio canónico declarado (NO accesible):** https://www.natalexperience.com.br/
+**Dominio canónico declarado (NO accesible):** https://www.natalexperience.com/
 
 Este documento es el resumen ejecutivo. El detalle completo de cada área está en:
 - [`01-technical.md`](01-technical.md) — SEO técnico (robots, sitemap, canonical, seguridad, CWV)
@@ -34,7 +34,7 @@ El score real está artificialmente bajo por un único motivo dominante: **el do
 
 ## Los 5 hallazgos más críticos (bloquean todo lo demás)
 
-### 1. El dominio `www.natalexperience.com.br` no resuelve en DNS
+### 1. El dominio `natalexperience.com` no resuelve en DNS
 Verificado con `nslookup`: *"Non-existent domain"*. Robots.txt, sitemap.xml, todos los `canonical` y `og:url` apuntan ahí. El sitio real vive en `https://natal-experience.vercel.app/`. **Mientras esto no se resuelva, Google y los crawlers de IA no pueden indexar nada — cero ROI en cualquier otra mejora.** Solución exacta en `01-technical.md` (C1): añadir el dominio en Vercel → Settings → Domains, crear los registros DNS que Vercel indique en el registrador (ej. registro.br), esperar propagación, verificar en Search Console.
 
 ### 2. Contradicción factual: "30 años de experiencia" vs "18 años" — repetida en 30+ archivos

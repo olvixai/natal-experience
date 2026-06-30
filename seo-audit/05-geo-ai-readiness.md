@@ -2,7 +2,7 @@
 
 **Fecha:** 2026-06-26
 **Sitio auditado (deploy real accesible):** https://natal-experience.vercel.app/
-**Dominio canónico declarado (robots.txt, sitemap.xml, todas las `<link rel="canonical">`):** https://www.natalexperience.com.br/ — **NO RESUELVE EN DNS** ("Non-existent domain")
+**Dominio canónico declarado (robots.txt, sitemap.xml, todas las `<link rel="canonical">`):** https://www.natalexperience.com/ — **NO RESUELVE EN DNS** ("Non-existent domain")
 **Código fuente:** `E:\ANTIGRAVITY\NATALEXPERIENCE`
 **Idioma:** pt-BR (turismo receptivo en Natal, Rio Grande do Norte, Brasil)
 **Páginas auditadas:** 42 (home, experiencias.html, quem-somos.html, faq.html, blog.html, contato.html, 16 `/passeios/`, 10 `/experiencias-exclusivas/`, 8 `/blog/`, 2 legales)
@@ -13,15 +13,15 @@
 
 Todo el trabajo de GEO de este informe es **inútil en la práctica** hasta resolver esto:
 
-- `robots.txt` → `Sitemap: https://www.natalexperience.com.br/sitemap.xml`
-- `sitemap.xml` → 42 URLs, todas con `https://www.natalexperience.com.br/...`
-- Cada página → `<link rel="canonical" href="https://www.natalexperience.com.br/...">` y `og:url` apuntando al mismo dominio inexistente.
-- El dominio `www.natalexperience.com.br` **no resuelve en DNS**. El sitio real y accesible está en `https://natal-experience.vercel.app/`.
+- `robots.txt` → `Sitemap: https://www.natalexperience.com/sitemap.xml`
+- `sitemap.xml` → 42 URLs, todas con `https://www.natalexperience.com/...`
+- Cada página → `<link rel="canonical" href="https://www.natalexperience.com/...">` y `og:url` apuntando al mismo dominio inexistente.
+- El dominio `natalexperience.com` **no resuelve en DNS**. El sitio real y accesible está en `https://natal-experience.vercel.app/`.
 
 **Consecuencia para GEO:** los crawlers de IA (GPTBot, PerplexityBot, ClaudeBot, OAI-SearchBot) descubren contenido a través de: (a) rastreo directo, (b) índice de Bing/Google (Copilot y Google AIO dependen de estos índices), o (c) enlaces compartidos. Si el dominio canónico no resuelve, ningún motor puede indexar nada bajo esa URL, y todo el `og:url`/canonical apunta a un agujero negro. Aunque Vercel sea rastreable, las señales de canonicalización contradicen la URL real, lo que puede hacer que buscadores y LLMs descarten o deduplique incorrectamente el contenido.
 
 **Acción obligatoria antes de cualquier otra recomendación de este informe:**
-1. Comprar/activar el dominio `natalexperience.com.br` y apuntar DNS al deploy de Vercel, O
+1. Comprar/activar el dominio `natalexperience.com` y apuntar DNS al deploy de Vercel, O
 2. Cambiar **todas** las referencias canónicas (`canonical`, `og:url`, `sitemap.xml`, `robots.txt`) al dominio Vercel real (o a un dominio propio que sí resuelva) antes de invertir en contenido/llms.txt/robots.txt — de lo contrario cualquier mejora de contenido será invisible para los crawlers.
 
 Este informe asume que el bloqueador de dominio se resuelve y entrega las mejoras de GEO en paralelo para que estén listas en el momento del lanzamiento del dominio correcto.
@@ -92,7 +92,7 @@ Ejemplo analizado en detalle: `passeios/buggy-litoral-norte.html` y `experiencia
 User-agent: *
 Allow: /
 
-Sitemap: https://www.natalexperience.com.br/sitemap.xml
+Sitemap: https://www.natalexperience.com/sitemap.xml
 ```
 
 Esto permite todo por defecto, pero **no declara intención** respecto a crawlers de IA. Riesgo: si en el futuro el cliente quiere bloquear bots de entrenamiento (CCBot, etc.) sin saberlo está permitiéndolos por el wildcard `*`, y no hay forma de auditar/demostrar a un cliente o stakeholder qué bots están explícitamente permitidos para búsqueda de IA.
@@ -191,7 +191,7 @@ User-agent: Bytespider
 Disallow: /
 
 # ===== Sitemap =====
-Sitemap: https://www.natalexperience.com.br/sitemap.xml
+Sitemap: https://www.natalexperience.com/sitemap.xml
 ```
 
 **Nota crítica:** este `robots.txt` debe publicarse en el dominio que realmente se use (ver Sección 0). Si se mantiene Vercel como dominio de producción, cambiar la línea `Sitemap:` a `https://natal-experience.vercel.app/sitemap.xml` o al dominio final que se active.
@@ -320,7 +320,7 @@ confirme valores atualizados em contato direto.
 
 **Notas de implementación:**
 - Sustituir todos los precios de este `llms.txt` por una revisión manual del cliente antes de publicar — varios ya están desactualizados o ausentes en el código fuente actual (ej. helicóptero "sob consulta").
-- Una vez resuelto el problema de dominio (Sección 0), todas las rutas deben usar el dominio final absoluto, no relativo, ya que algunos parsers de `llms.txt` esperan URLs completas. Si se confirma `www.natalexperience.com.br`, reemplazar cada `/passeios/...` por `https://www.natalexperience.com.br/passeios/...`.
+- Una vez resuelto el problema de dominio (Sección 0), todas las rutas deben usar el dominio final absoluto, no relativo, ya que algunos parsers de `llms.txt` esperan URLs completas. Si se confirma `natalexperience.com`, reemplazar cada `/passeios/...` por `https://www.natalexperience.com/passeios/...`.
 - Mantener el archivo bajo control de versiones y actualizarlo cada vez que se publique un nuevo tour o cambien precios — un `llms.txt` desactualizado es tan dañino para la confianza de un LLM como no tenerlo.
 
 ---
@@ -384,7 +384,7 @@ Esto es la contradicción factual más repetida y más visible del sitio para cu
 - Nombre: "NatalExperience Tours" — consistente en todas las páginas revisadas.
 - Dirección: "Rua Túlio Fernandes, 415 - Praia do Meio, Natal - RN, 59010-038, Brasil" — consistente en el footer de todas las páginas revisadas, pero el enlace de la dirección es `href="#"` (no enlaza a Google Maps/Google Business Profile) — **se pierde la oportunidad de reforzar la entidad geográfica vinculando a un perfil verificable**.
 - Teléfono: `+55 84 99986-8411` — consistente, con `tel:` correcto.
-- E-mail: `natalexperiencetours@gmail.com` — consistente. Nota: usar un dominio Gmail genérico (en vez de `@natalexperience.com.br`) es una señal débil de autoridad/profesionalismo para un LLM o para verificación humana de la entidad, y no ayuda al "entity graph" que vincula dominio + marca + contacto.
+- E-mail: `natalexperiencetours@gmail.com` — consistente. Nota: usar un dominio Gmail genérico (en vez de `@natalexperience.com`) es una señal débil de autoridad/profesionalismo para un LLM o para verificación humana de la entidad, y no ayuda al "entity graph" que vincula dominio + marca + contacto.
 
 ### 6.3 Redes sociales y presencia verificable externa (alto impacto negativo)
 
@@ -431,7 +431,7 @@ Aplicando el framework de 5 dimensiones declarado, basado en la evidencia recole
 ## 8. Checklist priorizada de GEO
 
 ### Prioridad 0 — Bloqueador (hacer antes que cualquier otra cosa)
-1. **Resolver el dominio canónico roto.** Activar DNS de `natalexperience.com.br` o migrar todas las referencias canónicas/sitemap/robots al dominio Vercel real. Sin esto, ninguna otra mejora es indexable. *(Esfuerzo: bajo-medio si es solo DNS; depende de quién gestiona el registro del dominio.)*
+1. **Resolver el dominio canónico roto.** Activar DNS de `natalexperience.com` o migrar todas las referencias canónicas/sitemap/robots al dominio Vercel real. Sin esto, ninguna otra mejora es indexable. *(Esfuerzo: bajo-medio si es solo DNS; depende de quién gestiona el registro del dominio.)*
 
 ### Prioridad 1 — Alto impacto, esfuerzo bajo-medio
 2. **Unificar la cifra de "años de experiencia"** en una sola verdad y propagarla de forma idéntica en las 42 páginas (footer + home + quem-somos). *(Esfuerzo: bajo si el footer es un componente compartido; medio si hay que editar cada archivo HTML individualmente.)*
@@ -453,7 +453,7 @@ Aplicando el framework de 5 dimensiones declarado, basado en la evidencia recole
 14. **Crear y activar canal de YouTube** con videos cortos de los tours (mayor señal de correlación con citación en IA, ~0.737). *(Esfuerzo: alto — producción de contenido.)*
 15. **Reclamar/optimizar Google Business Profile** y enlazar la dirección del footer a un perfil de Google Maps verificable. *(Esfuerzo: bajo-medio.)*
 16. **Solicitar reseñas en TripAdvisor/Google** de clientes reales (São Paulo, Lisboa, Buenos Aires ya mencionados como testimonios — convertirlos en reseñas verificables en plataformas externas). *(Esfuerzo: medio — proceso operativo continuo.)*
-17. **Migrar el e-mail de contacto** de Gmail genérico a un dominio propio (`@natalexperience.com.br`) una vez resuelto el dominio. *(Esfuerzo: bajo.)*
+17. **Migrar el e-mail de contacto** de Gmail genérico a un dominio propio (`@natalexperience.com`) una vez resuelto el dominio. *(Esfuerzo: bajo.)*
 18. **Añadir autoría nombrada (`Person` schema)** a los posts de blog, vinculando a Junior o a redactores identificados, con enlace a perfil profesional verificable (LinkedIn). *(Esfuerzo: bajo-medio.)*
 
 ### Prioridad 4 — Impacto bajo-medio, esfuerzo variable (mantenimiento continuo)

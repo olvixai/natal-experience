@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CRM | NatalExperience Tours</title>
+  <link rel="icon" type="image/png" href="../img/logo-minimal.png">
+  <link rel="stylesheet" href="css/crm.css">
+</head>
+<body>
+
+  <!-- ===================== LOGIN ===================== -->
+  <div id="view-login" class="login">
+    <form class="login__card" id="login-form" autocomplete="off">
+      <img src="../img/logo-minimal.png" alt="NatalExperience" class="login__logo">
+      <h1 class="login__title">NatalExperience <span>CRM</span></h1>
+      <p class="login__sub">Acceso interno</p>
+      <label class="field">
+        <span>Usuario</span>
+        <input type="text" id="login-user" required autocapitalize="none" spellcheck="false">
+      </label>
+      <label class="field">
+        <span>Contraseña</span>
+        <input type="password" id="login-pass" required>
+      </label>
+      <button type="submit" class="btn btn--gold btn--full" id="login-btn">Entrar</button>
+      <p class="login__error" id="login-error"></p>
+    </form>
+  </div>
+
+  <!-- ===================== APP ===================== -->
+  <div id="view-app" class="app hidden">
+
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="topbar__brand">
+        <img src="../img/logo-minimal.png" alt="">
+        <strong>CRM</strong>
+      </div>
+      <nav class="topbar__nav" id="main-nav">
+        <button class="navlink is-active" data-section="dashboard">Panel</button>
+        <button class="navlink" data-section="pipeline">Pipeline</button>
+        <button class="navlink" data-section="calendario">Agenda</button>
+        <button class="navlink admin-only" data-section="historial">Historial</button>
+      </nav>
+      <div class="topbar__user">
+        <span id="user-name"></span>
+        <button class="btn btn--ghost btn--sm" id="logout-btn">Salir</button>
+      </div>
+      <button class="topbar__hamb" id="hamb">☰</button>
+    </header>
+
+    <main class="main">
+
+      <!-- ---------- DASHBOARD ---------- -->
+      <section class="section-view" id="section-dashboard">
+        <h2 class="view-title">Panel de control</h2>
+        <div class="stats" id="stats"></div>
+        <h3 class="block-title">Próximas excursiones</h3>
+        <div class="proximas" id="proximas"></div>
+      </section>
+
+      <!-- ---------- PIPELINE ---------- -->
+      <section class="section-view hidden" id="section-pipeline">
+        <div class="view-head">
+          <h2 class="view-title">Pipeline de ventas</h2>
+          <button class="btn btn--gold btn--sm" id="new-reserva-btn">+ Nueva reserva</button>
+        </div>
+        <div class="kanban" id="kanban"></div>
+      </section>
+
+      <!-- ---------- CALENDARIO / AGENDA ---------- -->
+      <section class="section-view hidden" id="section-calendario">
+        <h2 class="view-title">Agenda de excursiones</h2>
+        <div class="agenda" id="agenda"></div>
+      </section>
+
+      <!-- ---------- HISTORIAL ---------- -->
+      <section class="section-view hidden" id="section-historial">
+        <h2 class="view-title">Historial de actividad</h2>
+        <p class="muted">Registro inmutable de cada acción. Solo lectura.</p>
+        <div class="logtable" id="logtable"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ===================== MODAL RESERVA ===================== -->
+  <div class="modal hidden" id="modal">
+    <div class="modal__backdrop" data-close></div>
+    <form class="modal__card" id="reserva-form">
+      <div class="modal__head">
+        <h3 id="modal-title">Nueva reserva</h3>
+        <button type="button" class="modal__close" data-close>×</button>
+      </div>
+      <div class="modal__body">
+        <input type="hidden" id="r-id">
+        <div class="grid2">
+          <label class="field"><span>Nombre del cliente *</span>
+            <input type="text" id="r-nombre" required></label>
+          <label class="field"><span>Teléfono</span>
+            <input type="text" id="r-telefono"></label>
+        </div>
+        <label class="field"><span>Email (necesario para enviar voucher)</span>
+          <input type="email" id="r-email"></label>
+        <div class="grid2">
+          <label class="field"><span>Excursión</span>
+            <select id="r-excursion"></select></label>
+          <label class="field"><span>Fecha de la excursión</span>
+            <input type="date" id="r-fecha"></label>
+        </div>
+        <div class="grid3">
+          <label class="field"><span>Personas</span>
+            <input type="number" id="r-personas" min="1"></label>
+          <label class="field"><span>Precio (R$)</span>
+            <input type="number" id="r-precio" min="0" step="10"></label>
+          <label class="field"><span>Forma de pago</span>
+            <select id="r-pago"></select></label>
+        </div>
+        <div class="grid2">
+          <label class="field"><span>Etapa</span>
+            <select id="r-estado"></select></label>
+          <label class="field"><span>Origen</span>
+            <input type="text" id="r-origen" readonly></label>
+        </div>
+        <label class="field"><span>Notas</span>
+          <textarea id="r-notas" rows="3"></textarea></label>
+        <div class="codigo-box hidden" id="codigo-box">
+          Código de reserva: <strong id="r-codigo"></strong>
+        </div>
+        <p class="confirm-hint" id="confirm-hint">
+          ⚠ Al pasar a <strong>Confirmado</strong> se enviará el voucher al cliente
+          y un aviso al administrador.
+        </p>
+      </div>
+      <div class="modal__foot">
+        <button type="button" class="btn btn--ghost" data-close>Cancelar</button>
+        <button type="submit" class="btn btn--gold" id="save-btn">Guardar</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast hidden" id="toast"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/crm.js"></script>
+</body>
+</html>

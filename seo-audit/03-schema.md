@@ -1,5 +1,5 @@
 # Auditoría de Datos Estructurados (Schema.org / JSON-LD)
-## NatalExperience Tours — natalexperience.com.br
+## NatalExperience Tours — natalexperience.com
 
 **Fecha de auditoría:** 2026-06-26
 **Alcance:** 42 archivos `.html` (raíz + `/passeios/` [16] + `/experiencias-exclusivas/` [10] + `/blog/` [8])
@@ -207,19 +207,19 @@ Datos extraídos directamente del HTML: precio adulto R$ 280, precio criança R$
   "name": "Mergulho em Maracajaú (Lancha Rápida)",
   "description": "Explore o Caribe Brasileiro em Maracajaú com a rapidez e emoção da Lancha Rápida. Mergulhe em águas cristalinas nos parrachos a 7km da costa, com snorkel entre corais e rica vida marinha. Passeio de aproximadamente 8 horas com saída de Ponta Negra, Via Costeira e Praia do Meio.",
   "image": [
-    "https://www.natalexperience.com.br/img/maracajau_lancha_new_1.jpg",
-    "https://www.natalexperience.com.br/img/maracajau_lancha_new_2.jpg",
-    "https://www.natalexperience.com.br/img/maracajau_lancha_new_3.jpg",
-    "https://www.natalexperience.com.br/img/maracajau_lancha_l3_centered.jpg"
+    "https://www.natalexperience.com/img/maracajau_lancha_new_1.jpg",
+    "https://www.natalexperience.com/img/maracajau_lancha_new_2.jpg",
+    "https://www.natalexperience.com/img/maracajau_lancha_new_3.jpg",
+    "https://www.natalexperience.com/img/maracajau_lancha_l3_centered.jpg"
   ],
   "brand": {
     "@type": "Organization",
     "name": "NatalExperience Tours"
   },
-  "url": "https://www.natalexperience.com.br/passeios/maracajau.html",
+  "url": "https://www.natalexperience.com/passeios/maracajau.html",
   "offers": {
     "@type": "Offer",
-    "url": "https://www.natalexperience.com.br/passeios/maracajau.html",
+    "url": "https://www.natalexperience.com/passeios/maracajau.html",
     "priceCurrency": "BRL",
     "price": "280.00",
     "priceValidUntil": "2026-12-31",
@@ -249,20 +249,20 @@ Datos extraídos: precio R$ 780 (valor por buggy, no por persona — importante 
   "name": "Litoral Norte Completo (Passeio de Buggy)",
   "description": "Passeio de buggy pelo litoral norte de Natal: dunas de Genipabu, Lagoa de Pitangui, Lagoa de Jacumã e Praia de Muriú. Buggy exclusivo com motorista/guia credenciado, transporte ida e volta do hotel em Natal e seguro de passageiro incluídos. Duração aproximada de 7 horas.",
   "image": [
-    "https://www.natalexperience.com.br/img/buggy-norte-2.jpg",
-    "https://www.natalexperience.com.br/img/buggy-norte-3.jpg",
-    "https://www.natalexperience.com.br/img/buggy-norte-ponte-newcomer.jpg",
-    "https://www.natalexperience.com.br/img/buggy-norte-4.jpg",
-    "https://www.natalexperience.com.br/img/buggy-norte-grupo-t1.jpg"
+    "https://www.natalexperience.com/img/buggy-norte-2.jpg",
+    "https://www.natalexperience.com/img/buggy-norte-3.jpg",
+    "https://www.natalexperience.com/img/buggy-norte-ponte-newcomer.jpg",
+    "https://www.natalexperience.com/img/buggy-norte-4.jpg",
+    "https://www.natalexperience.com/img/buggy-norte-grupo-t1.jpg"
   ],
   "brand": {
     "@type": "Organization",
     "name": "NatalExperience Tours"
   },
-  "url": "https://www.natalexperience.com.br/passeios/buggy-litoral-norte.html",
+  "url": "https://www.natalexperience.com/passeios/buggy-litoral-norte.html",
   "offers": {
     "@type": "Offer",
-    "url": "https://www.natalexperience.com.br/passeios/buggy-litoral-norte.html",
+    "url": "https://www.natalexperience.com/passeios/buggy-litoral-norte.html",
     "priceCurrency": "BRL",
     "price": "780.00",
     "priceValidUntil": "2026-12-31",
@@ -291,20 +291,20 @@ Este caso **no tiene precio fijo** en el HTML ("Sob Consulta / Voo — Preço a 
   "name": "Voo Panorâmico de Helicóptero",
   "description": "Veja Natal de uma perspectiva única e inesquecível. Sobrevoo das dunas, do litoral e dos principais pontos turísticos da cidade com piloto executivo experiente. Voo exclusivo para até 4 ou 6 passageiros, com duração de 15 a 30 minutos.",
   "image": [
-    "https://www.natalexperience.com.br/img/helicoptero_card.png",
-    "https://www.natalexperience.com.br/img/helicoptero_gallery_1.jpg",
-    "https://www.natalexperience.com.br/img/helicoptero_gallery_2.jpg",
-    "https://www.natalexperience.com.br/img/helicoptero_gallery_3.jpg",
-    "https://www.natalexperience.com.br/img/helicoptero_gallery_4.jpg"
+    "https://www.natalexperience.com/img/helicoptero_card.png",
+    "https://www.natalexperience.com/img/helicoptero_gallery_1.jpg",
+    "https://www.natalexperience.com/img/helicoptero_gallery_2.jpg",
+    "https://www.natalexperience.com/img/helicoptero_gallery_3.jpg",
+    "https://www.natalexperience.com/img/helicoptero_gallery_4.jpg"
   ],
   "brand": {
     "@type": "Organization",
     "name": "NatalExperience Tours"
   },
-  "url": "https://www.natalexperience.com.br/experiencias-exclusivas/voo-helicoptero.html",
+  "url": "https://www.natalexperience.com/experiencias-exclusivas/voo-helicoptero.html",
   "offers": {
     "@type": "Offer",
-    "url": "https://www.natalexperience.com.br/experiencias-exclusivas/voo-helicoptero.html",
+    "url": "https://www.natalexperience.com/experiencias-exclusivas/voo-helicoptero.html",
     "priceCurrency": "BRL",
     "availability": "https://schema.org/InStock",
     "businessFunction": "https://schema.org/Sell",
@@ -329,7 +329,7 @@ Mismo caso: precio "Sob Consulta", sin valor numérico en el HTML. Aquí se mode
   "provider": {
     "@type": "Organization",
     "name": "NatalExperience Tours",
-    "url": "https://www.natalexperience.com.br/"
+    "url": "https://www.natalexperience.com/"
   },
   "areaServed": {
     "@type": "City",
@@ -339,8 +339,8 @@ Mismo caso: precio "Sob Consulta", sin valor numérico en el HTML. Aquí se mode
       "name": "Rio Grande do Norte"
     }
   },
-  "url": "https://www.natalexperience.com.br/experiencias-exclusivas/transfer-vip.html",
-  "image": "https://www.natalexperience.com.br/img/transfer-vip-real.png",
+  "url": "https://www.natalexperience.com/experiencias-exclusivas/transfer-vip.html",
+  "image": "https://www.natalexperience.com/img/transfer-vip-real.png",
   "offers": {
     "@type": "Offer",
     "priceCurrency": "BRL",
@@ -410,7 +410,7 @@ Schema.org tiene el tipo específico `TravelAgency` (subtipo de `LocalBusiness`)
 - Dirección: Rua Túlio Fernandes, 415 - Praia do Meio, Natal - RN, 59010-038, Brasil
 - Teléfono: +55 84 99986-8411 (confirmado también en `tel:+5584999868411`)
 - Email: natalexperiencetours@gmail.com
-- URL: https://www.natalexperience.com.br/ (según `<link rel="canonical">` de `index.html`)
+- URL: https://www.natalexperience.com/ (según `<link rel="canonical">` de `index.html`)
 - Logo: img/logo-minimal.png
 
 ### 5.3 ⚠️ Inconsistencia de contenido detectada (antes de implementar `foundingDate` o antigüedad)
@@ -429,11 +429,11 @@ Esto es una discrepancia de negocio (18 vs 30 años) que no es un problema de sc
 {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
-  "@id": "https://www.natalexperience.com.br/#organization",
+  "@id": "https://www.natalexperience.com/#organization",
   "name": "NatalExperience Tours",
-  "image": "https://www.natalexperience.com.br/img/logo-minimal.png",
-  "logo": "https://www.natalexperience.com.br/img/logo-minimal.png",
-  "url": "https://www.natalexperience.com.br/",
+  "image": "https://www.natalexperience.com/img/logo-minimal.png",
+  "logo": "https://www.natalexperience.com/img/logo-minimal.png",
+  "url": "https://www.natalexperience.com/",
   "telephone": "+55-84-99986-8411",
   "email": "natalexperiencetours@gmail.com",
   "address": {
@@ -480,10 +480,10 @@ Esto es una discrepancia de negocio (18 vs 30 años) que no es un problema de sc
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://www.natalexperience.com.br/#website",
-  "url": "https://www.natalexperience.com.br/",
+  "@id": "https://www.natalexperience.com/#website",
+  "url": "https://www.natalexperience.com/",
   "name": "NatalExperience Tours",
-  "publisher": { "@id": "https://www.natalexperience.com.br/#organization" },
+  "publisher": { "@id": "https://www.natalexperience.com/#organization" },
   "inLanguage": "pt-BR"
 }
 ```
@@ -509,19 +509,19 @@ Basado en el breadcrumb visible real: `Início › Experiências › Passeios Cl
       "@type": "ListItem",
       "position": 1,
       "name": "Início",
-      "item": "https://www.natalexperience.com.br/"
+      "item": "https://www.natalexperience.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Experiências",
-      "item": "https://www.natalexperience.com.br/experiencias.html"
+      "item": "https://www.natalexperience.com/experiencias.html"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Passeios Clássicos",
-      "item": "https://www.natalexperience.com.br/experiencias.html#classicos"
+      "item": "https://www.natalexperience.com/experiencias.html#classicos"
     },
     {
       "@type": "ListItem",
@@ -547,19 +547,19 @@ Basado en el breadcrumb visible real: `Início › Experiências › Experiênci
       "@type": "ListItem",
       "position": 1,
       "name": "Início",
-      "item": "https://www.natalexperience.com.br/"
+      "item": "https://www.natalexperience.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Experiências",
-      "item": "https://www.natalexperience.com.br/experiencias.html"
+      "item": "https://www.natalexperience.com/experiencias.html"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Experiências Exclusivas",
-      "item": "https://www.natalexperience.com.br/experiencias.html#exclusivas"
+      "item": "https://www.natalexperience.com/experiencias.html#exclusivas"
     },
     {
       "@type": "ListItem",
@@ -602,7 +602,7 @@ Este bloque se anidaría dentro del objeto `TravelAgency` de §5.4 (agregar las 
 {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
-  "@id": "https://www.natalexperience.com.br/#organization",
+  "@id": "https://www.natalexperience.com/#organization",
   "name": "NatalExperience Tours",
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -685,7 +685,7 @@ Datos extraídos: título, fecha "25 de Abril, 2026", categoría "Dicas de Viage
   "@type": "BlogPosting",
   "headline": "O que fazer em Natal RN: Guia completo para planejar sua viagem perfeita",
   "description": "Descubra o que fazer em Natal RN: praias, dunas de Genipabu, mergulho em Maracajaú e muito mais. O guia definitivo para sua viagem perfeita.",
-  "image": "https://www.natalexperience.com.br/img/blog-guia-natal.jpg",
+  "image": "https://www.natalexperience.com/img/blog-guia-natal.jpg",
   "datePublished": "2026-04-25",
   "author": {
     "@type": "Organization",
@@ -696,12 +696,12 @@ Datos extraídos: título, fecha "25 de Abril, 2026", categoría "Dicas de Viage
     "name": "NatalExperience Tours",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.natalexperience.com.br/img/logo-minimal.png"
+      "url": "https://www.natalexperience.com/img/logo-minimal.png"
     }
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.natalexperience.com.br/blog/guia-natal.html"
+    "@id": "https://www.natalexperience.com/blog/guia-natal.html"
   }
 }
 ```
@@ -734,7 +734,7 @@ Todos los bloques JSON-LD de este informe fueron verificados contra el checklist
 1. ✅ `@context` es `"https://schema.org"` (HTTPS, no HTTP) en todos los bloques.
 2. ✅ Ningún `@type` usado es deprecado (no se usó `HowTo`, `SpecialAnnouncement`, `CourseInfo`, `EstimatedSalary` ni `LearningVideo`).
 3. ✅ `FAQPage` se mantiene pero marcado explícitamente como prioridad Info (no Crítica) por la restricción de Google a sitios gubernamentales/salud desde agosto 2023.
-4. ✅ Todas las URLs son absolutas (`https://www.natalexperience.com.br/...`), nunca relativas.
+4. ✅ Todas las URLs son absolutas (`https://www.natalexperience.com/...`), nunca relativas.
 5. ✅ Las fechas usadas (`priceValidUntil`, `datePublished`) están en formato ISO 8601 (`YYYY-MM-DD`).
 6. ✅ No se incluyó ningún placeholder tipo `[Business Name]` en los bloques finales de implementación directa (§3, §4.2-4.5, §5.4-5.5, §6.2-6.3, §7.2, §8) — los placeholders `{{ }}` solo aparecen en la plantilla genérica de §4.6, identificada explícitamente como plantilla a completar, no como bloque final.
 7. ✅ Todo dato no verificable en el código fuente (geo-coordenadas, horario de atención, redes sociales reales, antigüedad de la empresa, precios de experiencias "Sob Consulta") fue señalado explícitamente como **dato faltante a completar por el cliente**, sin inventar valores.

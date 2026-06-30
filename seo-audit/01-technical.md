@@ -26,24 +26,24 @@ El score está dominado por el Hallazgo Crítico #1 (dominio no resuelve), que p
 
 ## CRITICAL
 
-### C1. El dominio de producción `www.natalexperience.com.br` no resuelve en DNS
-**Evidencia:** `nslookup www.natalexperience.com.br` → `Non-existent domain`. Todos los `canonical`, `og:url` y `sitemap.xml` referencian este dominio. El despliegue real y accesible está en `https://natal-experience.vercel.app/`.
+### C1. El dominio de producción `natalexperience.com` no resuelve en DNS
+**Evidencia:** `nslookup natalexperience.com` → `Non-existent domain`. Todos los `canonical`, `og:url` y `sitemap.xml` referencian este dominio. El despliegue real y accesible está en `https://natal-experience.vercel.app/`.
 
 **Impacto:** Google no puede rastrear ni indexar absolutamente nada. Aunque el sitio se indexara accidentalmente vía el subdominio `.vercel.app`, todas las señales de canonicalización apuntan a un dominio que no existe — lo que generará errores "No se encontró la página" o "URL canónica no válida" en Search Console en cuanto Google intente verificarlo. Cualquier esfuerzo de contenido/schema/keywords hecho hasta que esto se resuelva tiene ROI de indexación = 0.
 
 **Recomendación — pasos exactos:**
-1. **En el registrador del dominio** (donde se compró `natalexperience.com.br`, ej. registro.br): localizar la gestión de DNS del dominio.
-2. **En Vercel:** ir al proyecto `natal-experience` → Settings → Domains → Add Domain → introducir `natalexperience.com.br` y `www.natalexperience.com.br`. Vercel mostrará los registros DNS exactos a crear (normalmente un registro `A` apuntando a `76.76.21.21` para el dominio raíz, y un `CNAME` apuntando a `cname.vercel-dns.com` para el subdominio `www`).
+1. **En el registrador del dominio** (donde se compró `natalexperience.com`, ej. registro.br): localizar la gestión de DNS del dominio.
+2. **En Vercel:** ir al proyecto `natal-experience` → Settings → Domains → Add Domain → introducir `natalexperience.com` y `natalexperience.com`. Vercel mostrará los registros DNS exactos a crear (normalmente un registro `A` apuntando a `76.76.21.21` para el dominio raíz, y un `CNAME` apuntando a `cname.vercel-dns.com` para el subdominio `www`).
 3. **En el panel DNS del registrador:** crear esos registros exactamente como los indica Vercel.
 4. Esperar propagación DNS (puede tardar de minutos a 48h; dominios `.com.br` vía registro.br suelen propagar en 1-6h).
-5. Verificar con `nslookup www.natalexperience.com.br` y confirmar que Vercel marque el dominio como "Valid Configuration" (candado verde) en el dashboard.
+5. Verificar con `nslookup natalexperience.com` y confirmar que Vercel marque el dominio como "Valid Configuration" (candado verde) en el dashboard.
 6. Una vez resuelto, forzar verificación de propiedad en Google Search Console (dominio y prefijo `https://www.`) y enviar el sitemap.
-7. Decidir el dominio canónico real: si se usará `www` (como ya están configurados todos los `canonical`/`og:url`), configurar en Vercel el redirect 301 de `natalexperience.com.br` (sin www) → `https://www.natalexperience.com.br` para evitar contenido duplicado entre apex y subdominio.
+7. Decidir el dominio canónico real: si se usará `www` (como ya están configurados todos los `canonical`/`og:url`), configurar en Vercel el redirect 301 de `natalexperience.com` (sin www) → `https://www.natalexperience.com` para evitar contenido duplicado entre apex y subdominio.
 
 ---
 
 ### C2. `apps-script/Code.gs` expone un Google Sheet ID en texto plano y está trackeado en git/producción
-**Evidencia:** `E:\ANTIGRAVITY\NATALEXPERIENCE\apps-script\Code.gs` línea 1: `const SHEET_ID = '1K-sHm6QKT78yoUoH-f40df5lb5FS8jJjyOM-HWdy9Vo';` — confirmado vía `git ls-files` que el archivo está trackeado (no ignorado), y `.gitignore` solo excluye `.vercel`. Al ser un sitio estático servido íntegro desde la raíz del repo, Vercel serviría este archivo como un recurso estático público accesible en `https://www.natalexperience.com.br/apps-script/Code.gs` salvo que se excluya explícitamente.
+**Evidencia:** `E:\ANTIGRAVITY\NATALEXPERIENCE\apps-script\Code.gs` línea 1: `const SHEET_ID = '1K-sHm6QKT78yoUoH-f40df5lb5FS8jJjyOM-HWdy9Vo';` — confirmado vía `git ls-files` que el archivo está trackeado (no ignorado), y `.gitignore` solo excluye `.vercel`. Al ser un sitio estático servido íntegro desde la raíz del repo, Vercel serviría este archivo como un recurso estático público accesible en `https://www.natalexperience.com/apps-script/Code.gs` salvo que se excluya explícitamente.
 
 **Impacto:** No es una API key explotable por sí sola, pero expone el identificador del Google Sheet donde se almacenan los leads (nombre, email, teléfono, mensaje de clientes) — facilita reconocimiento/targeting si el Sheet no tiene permisos estrictos. Es una mala práctica de higiene de repositorio independientemente del riesgo real.
 
@@ -129,7 +129,7 @@ Ninguna etiqueta `<img>` revisada (0 de 29 muestreadas en `index.html`/`passeios
 ---
 
 ### H3. Contenido duplicado potencial: `/` vs `/index.html`
-**Evidencia:** `sitemap.xml` lista `https://www.natalexperience.com.br/` (sin `index.html`), y el `canonical` de `index.html` apunta correctamente a `/`. Sin embargo, no existe ningún redirect que fuerce `/index.html` → `/`, y el archivo es servible bajo ambas rutas en cualquier hosting estático (incluido Vercel por defecto).
+**Evidencia:** `sitemap.xml` lista `https://www.natalexperience.com/` (sin `index.html`), y el `canonical` de `index.html` apunta correctamente a `/`. Sin embargo, no existe ningún redirect que fuerce `/index.html` → `/`, y el archivo es servible bajo ambas rutas en cualquier hosting estático (incluido Vercel por defecto).
 
 **Impacto:** Riesgo bajo-medio de contenido duplicado si algún enlace externo o interno antiguo apunta a `/index.html` explícitamente; Google normalmente resuelve esto vía canonical, pero es una corrección trivial de eliminar por completo el riesgo.
 
@@ -186,7 +186,7 @@ Adicionalmente, añadir una sección "Artigos relacionados" al final de cada pos
 ```
 User-agent: *
 Allow: /
-Sitemap: https://www.natalexperience.com.br/sitemap.xml
+Sitemap: https://www.natalexperience.com/sitemap.xml
 ```
 El wildcard `User-agent: *` con `Allow: /` técnicamente ya permite a todos los bots (incluidos GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, etc.) rastrear el sitio, así que **no hay bloqueo activo**. Sin embargo, no hay declaración explícita por bot, lo cual es la práctica recomendada en 2026 para sitios que buscan visibilidad en respuestas de IA generativa (AI Overviews, ChatGPT browsing, Perplexity, Claude).
 
@@ -229,7 +229,7 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://www.natalexperience.com.br/sitemap.xml
+Sitemap: https://www.natalexperience.com/sitemap.xml
 ```
 Nota: dado que el objetivo del sitio es maximizar reservas turísticas, permitir explícitamente estos bots favorece que la marca aparezca citada en respuestas de ChatGPT/Perplexity/Gemini/Claude cuando un usuario pregunte "mejores passeios em Natal" — esto es deseable para este caso de negocio. Si en el futuro se quisiera restringir el entrenamiento de modelos sin restringir la búsqueda conversacional, se puede bloquear específicamente `GPTBot`/`CCBot` (entrenamiento) mientras se permite `OAI-SearchBot`/`ChatGPT-User` (búsqueda en tiempo real), pero no se recomienda para este negocio.
 
@@ -305,7 +305,7 @@ Las tres compiten por la misma intención de búsqueda raíz ("passeio de buggy 
   __pycache__/
   ```
 - Si se prefiere no versionarlos en absoluto en este repo (ej. si contienen rutas locales como `C:\Users\hecgo\Downloads` — confirmado en `optimize_images.py` línea 4), moverlos a un repositorio/carpeta de tooling separada fuera del directorio servido por Vercel.
-- En cualquier caso, un `.vercelignore` es la corrección mínima necesaria para evitar que terminen accesibles públicamente en `https://www.natalexperience.com.br/gen_pages.py`, etc.
+- En cualquier caso, un `.vercelignore` es la corrección mínima necesaria para evitar que terminen accesibles públicamente en `https://www.natalexperience.com/gen_pages.py`, etc.
 
 ### L2. Falta de `hreflang`
 **Evidencia:** 0 de 42 páginas tienen `hreflang`. El sitio es monolingüe (`pt-BR` declarado consistentemente en `<html lang="pt-BR">` en las 4 muestras verificadas).

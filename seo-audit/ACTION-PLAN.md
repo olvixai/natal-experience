@@ -8,7 +8,7 @@ Leyenda de esfuerzo: 🟢 Bajo (minutos-1h) · 🟡 Medio (1-4h) · 🔴 Alto (d
 
 | # | Acción | Esfuerzo | Detalle |
 |---|---|---|---|
-| 1 | Configurar el dominio `natalexperience.com.br` en Vercel y crear los registros DNS en el registrador (A → 76.76.21.21 para apex, CNAME → cname.vercel-dns.com para www). Verificar propagación y dar de alta el sitio en Google Search Console + enviar sitemap. | 🔴 | `01-technical.md` C1 |
+| 1 | Configurar el dominio `natalexperience.com` en Vercel y crear los registros DNS en el registrador (A → 76.76.21.21 para apex, CNAME → cname.vercel-dns.com para www). Verificar propagación y dar de alta el sitio en Google Search Console + enviar sitemap. | 🔴 | `01-technical.md` C1 |
 | 2 | Resolver la contradicción "30 años" vs "18 años" de experiencia. Decidir una cifra real (empresa vs. fundador) y unificarla en las 42 páginas (hero, footer, meta descriptions, stats counter). | 🟡 | `02-content.md` C1 |
 | 3 | Excluir del despliegue de Vercel los scripts `.py` y `apps-script/` (crear `.vercelignore`); rotar el Sheet ID si el repo/deploy ya fue público. | 🟢 | `01-technical.md` C2 |
 | 4 | Unificar el aviso de copyright: una sola cadena `© 2026 NatalExperience Tours. Todos os direitos reservados.` en las ~44 páginas (hoy hay 4 variantes mezclando español/portugués, incluida una híbrida). | 🟢 | `02-content.md` C2 |

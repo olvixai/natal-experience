@@ -2,7 +2,7 @@ import os
 import re
 from datetime import datetime
 
-DOMAIN = "https://www.natalexperience.com.br"
+DOMAIN = "https://www.natalexperience.com"
 DEFAULT_IMAGE = f"{DOMAIN}/img/hero-natal.png"
 
 def update_seo_tags(filepath):

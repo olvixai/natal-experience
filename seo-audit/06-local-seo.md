@@ -1,6 +1,6 @@
 # Auditoría de Local SEO — NatalExperience Tours
 
-**Sitio auditado:** https://natal-experience.vercel.app/ (dominio de producción `natalexperience.com.br` aún no resuelve en DNS — hallazgo crítico técnico ya cubierto por otro agente, no se repite aquí salvo impacto en señales locales)
+**Sitio auditado:** https://natal-experience.vercel.app/ (dominio de producción `natalexperience.com` aún no resuelve en DNS — hallazgo crítico técnico ya cubierto por otro agente, no se repite aquí salvo impacto en señales locales)
 **Código fuente analizado:** `E:\ANTIGRAVITY\NATALEXPERIENCE`
 **Fecha de auditoría:** 2026-06-26
 **Negocio:** NatalExperience Tours — agencia de tours / operador turístico físicamente operativo en Natal, RN, Brasil
@@ -65,7 +65,7 @@ Crear/reclamar el Perfil de Negocio de Google **antes** de cualquier otra inicia
 - Usar el NAP exacto confirmado en el sitio (ver sección 4) de forma idéntica, carácter por carácter.
 - Subir fotos reales de los tours (no solo banco de imágenes/render) — la sección "Photo evidence" de GBP es una señal de confianza fuerte y barata de conseguir dado que ya hay gran cantidad de imágenes propias en `/img/` (pipa_1-5.jpg, maracajau_*, galinhos.png, gostoso_main.png, etc.) que sugieren que sí hay material visual propio que podría reutilizarse en GBP.
 - Activar Google Posts desde el día 1, vinculados a las páginas de destino existentes (Pipa, Maracajaú, Galinhos, São Miguel do Gostoso).
-- Vincular el perfil al sitio web real (`https://natal-experience.vercel.app/` mientras el dominio definitivo no resuelva) y mantenerlo sincronizado cuando `natalexperience.com.br` entre en producción — un cambio de URL en GBP sin previo aviso genera fricción de confianza.
+- Vincular el perfil al sitio web real (`https://natal-experience.vercel.app/` mientras el dominio definitivo no resuelva) y mantenerlo sincronizado cuando `natalexperience.com` entre en producción — un cambio de URL en GBP sin previo aviso genera fricción de confianza.
 
 ---
 
@@ -113,7 +113,7 @@ Los operadores que dominan el Local Pack / Maps en passeio de buggy y tours en N
 
 **Hallazgos de riesgo para consistencia NAP futura (no son discrepancias hoy, pero son vulnerabilidades):**
 
-1. **Email genérico de Gmail** (`natalexperiencetours@gmail.com`) en lugar de un dominio corporativo propio (`contato@natalexperience.com.br`). Ya señalado en el contexto de la tarea como hallazgo, se reitera aquí porque también afecta la verificación de GBP: Google Business Profile no exige email corporativo, pero los formularios de citations de turismo (Setur-RN, cámaras de comercio) y agregadores B2B (GetYourGuide, Civitatis, Booking Experiences) sí suelen pedir o priorizar dominio propio como señal de legitimidad empresarial. Migrar a email corporativo en cuanto el dominio resuelva es recomendable.
+1. **Email genérico de Gmail** (`natalexperiencetours@gmail.com`) en lugar de un dominio corporativo propio (`contato@natalexperience.com`). Ya señalado en el contexto de la tarea como hallazgo, se reitera aquí porque también afecta la verificación de GBP: Google Business Profile no exige email corporativo, pero los formularios de citations de turismo (Setur-RN, cámaras de comercio) y agregadores B2B (GetYourGuide, Civitatis, Booking Experiences) sí suelen pedir o priorizar dominio propio como señal de legitimidad empresarial. Migrar a email corporativo en cuanto el dominio resuelva es recomendable.
 
 2. **Inconsistencia de antigüedad del negocio detectada en el propio código** (no es NAP estricto, pero es una señal de confianza adyacente que un revisor humano o un crawler de IA detectaría igual que detecta discrepancias NAP):
    - Footer global (todas las páginas): *"Há mais de 18 anos criando experiências..."*
@@ -293,7 +293,7 @@ Dado que 3 de los 5 principales factores de visibilidad en IA están relacionado
 
 ### Bajo
 
-13. **Migrar el email de contacto de Gmail genérico a un dominio corporativo propio** una vez `natalexperience.com.br` resuelva en DNS — mejora percepción de legitimidad en formularios de citations B2B (GetYourGuide, Civitatis, cámaras de comercio).
+13. **Migrar el email de contacto de Gmail genérico a un dominio corporativo propio** una vez `natalexperience.com` resuelva en DNS — mejora percepción de legitimidad en formularios de citations B2B (GetYourGuide, Civitatis, cámaras de comercio).
 14. **Crear una página agregadora "Áreas que Atendemos"** que liste todos los destinos servidos con enlace a cada landing existente, complementando (no sustituyendo) las páginas individuales ya construidas.
 15. **Considerar exponer un teléfono fijo adicional con DDD 84** (si la operativa del negocio lo permite) junto al móvil/WhatsApp actual, replicando la señal de "negocio establecido con oficina física" observada en el competidor verificado (Maracajaú Diver).
 
